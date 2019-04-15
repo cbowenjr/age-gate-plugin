@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Age Gate</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<div class="main">
+		<img src="assets/brooklynbrewery.png" height="100" width="100">
+		<h1 id="welcome">Welcome To Brooklyn!</h1>
+
+		<div id="age-check-screen">
+			<p>You must be of legal drinking age to use this site</p>
+
+			<div>
+				<select id="months">
+					<option value="" selected disabled hidden>Month</option>
+				</select>
+				<select id="day">
+					<option value="" selected disabled hidden>Day</option>
+				</select>
+				<select id="year">
+					<option value="" selected disabled hidden>Year</option>
+				</select>
+			</div>
+			
+			<label><input id="remember-user" type="checkbox" name="age" value="age">Remember Me</label>
+			<div id="enter-btn" onclick="calculateAge()">Enter</div>
+
+			<p id="valid-text" class="hide">Please Enter Valid Date</p>
+			<p id="underage-text" onclick="showUnderagedScreen()">I AM NOT OF LEGAL DRINKING AGE</p>
+
+
+		</div>
+
+		<div id="legal-screen" class="hide">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/BNUyI9Nm5XM?start=4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+
+		<div id="underaged-screen" class="hide">
+			<p>Due to the age requirements you are not permitted to view the contents of the page.</p>
+		</div>
+
+
+	</div>
+
+	
+
+</body>
+</html>

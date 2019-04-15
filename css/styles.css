@@ -1,0 +1,62 @@
+body {
+	background: black;
+}
+
+.main {
+	margin-top:20vh;
+	text-align: center;
+}
+
+#welcome {
+	font-family: 'Finger Paint', cursive;
+}
+
+.main h1, p {
+	color: white
+}
+
+#enter-btn {
+	width: 8em;
+	height: 2.5em;
+	background: green;
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 2.5em;
+	font-family: 'Finger Paint', cursive;
+	font-size: 1rem;
+}
+
+#enter-btn:hover {
+	cursor: pointer;
+}
+
+#underage-text {
+	color: green;
+}
+
+#underage-text:hover {
+	cursor: pointer;
+}
+
+.hide {
+	display: none;
+}
+
+#valid-text {
+	color: red;
+}
+
+#age-check-screen label{
+	color: white;
+}
+
+input {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+select {
+	width: 8em;
+	border-radius: 8px;
+}
